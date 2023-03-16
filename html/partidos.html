@@ -87,6 +87,10 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 8pt;
         }
+
+        .carousel-inner img {
+            margin: auto;
+        }
     </style>
 </head>
 
@@ -284,7 +288,8 @@
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1" class="form-label mt-4">Contraseña de usuario</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" required placeholder="Contraseña">
+                <input type="password" class="form-control" id="exampleInputPassword1" required
+                    placeholder="Contraseña">
             </div>
             <div class="form-group">
                 <label for="exampleSelect1" class="form-label mt-4">Partido</label>
@@ -346,32 +351,29 @@
                     </label>
                 </div>
             </fieldset>
-            <fieldset class="form-group" >
+            <fieldset class="form-group">
                 <legend class="mt-4">Método de pago</legend>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="optionpago" id="optionsPagos1"
-                        value="option1" checked="">
+                    <input class="form-check-input" type="radio" name="optionpago" id="optionsPagos1" value="option1"
+                        checked="">
                     <label class="form-check-label" for="optionsPagos1">
                         TARJETA DE CRÉDITO
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="optionpago" id="optionsPagos2"
-                        value="option2">
+                    <input class="form-check-input" type="radio" name="optionpago" id="optionsPagos2" value="option2">
                     <label class="form-check-label" for="optionsPagos2">
                         BIZUM
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="optionpago" id="optionsPagos3"
-                        value="option3">
+                    <input class="form-check-input" type="radio" name="optionpago" id="optionsPagos3" value="option3">
                     <label class="form-check-label" for="optionsPagos3">
                         PAYPAL
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="optionpago" id="optionsPagos4"
-                        value="option4">
+                    <input class="form-check-input" type="radio" name="optionpago" id="optionsPagos4" value="option4">
                     <label class="form-check-label" for="optionsPagos4">
                         EFECTIVO EN TAQUILLA
                     </label>
@@ -384,9 +386,41 @@
                         MEDIA HORA ANTES DE COMENZAR EL PARTIDO EN TAQUILLA
                     </strong> </p>
             </div>
-            <button type="submit" class="btn btn-danger">Enviar</button>
+            <button type="submit" class="btn btn-danger">Comprar</button>
         </fieldset>
     </form>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active opacity-75">
+                <img src="../img/tour.jpg" alt="Tour estadio Sevilla FC" class="d-block" style="width: 85%;">
+            </div>
+            <div class="carousel-item opacity-75">
+                <img src="../img/castore.jpg" alt="Patrocinador Castore" class="d-block align-items-center"
+                    style="width: 85%;">
+            </div>
+            <div class="carousel-item opacity-75">
+                <img src="../img/133.jpg" alt="133 años" class="d-block" style="width: 85%;">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo text-black" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
 
 
 
